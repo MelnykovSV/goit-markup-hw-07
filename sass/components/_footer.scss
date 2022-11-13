@@ -44,10 +44,6 @@
   letter-spacing: 0.03em;
   color: $white;
 }
-/* .footer__location:hover,
-  .footer__location:focus {
-    color: $blue);
-  } */
 
 .footer__email,
 .footer__tel {
@@ -55,13 +51,6 @@
   letter-spacing: 0.03em;
   color: $contacts-footer;
 }
-
-/* .footer__email:hover,
-  .footer__email:focus,
-  .footer__tel:hover,
-  .footer__tel:focus {
-    color: $blue);
-  } */
 
 .socials {
   margin-right: 93px;
@@ -125,13 +114,15 @@
   line-height: calc(20 / 16);
   letter-spacing: 0.03em;
   color: $contacts-footer;
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    letter-spacing: 0.03em;
+    color: $contacts-footer;
+  }
 }
-.subscribe-form__email-input::placeholder {
-  font-size: 16px;
-  line-height: calc(20 / 16);
-  letter-spacing: 0.03em;
-  color: $contacts-footer;
-}
+
 .subscribe-form__icon {
   fill: $white;
 }

@@ -43,8 +43,8 @@ img {
 
 .link {
   transition: color $time $cubic;
-}
-.link:hover,
-.link:focus {
-  color: $blue;
+  &:hover,
+  &:focus {
+    color: $blue;
+  }
 }
