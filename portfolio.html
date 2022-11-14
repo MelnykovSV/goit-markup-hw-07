@@ -13,7 +13,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <!-- А почему именно normalize а не reset? Тут же все равно остаются ненужные паддинги/маржины, например, в списках. Их пришлось отдельно убирать. Не проще тогда обнулить сразу все паддинги/маржины через reset? -->
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./dist/css/main.min.css" />
     <title>Портфоліо</title>
   </head>
   <body>
@@ -389,7 +389,7 @@
           </ul>
         </div>
         <form action="" class="subscribe-form">
-          <h2 class="subscribe-form__title">Підпишіться на розсилку</h2>
+          <strong class="subscribe-form__title">Підпишіться на розсилку</strong>
           <div class="subscribe-form__body">
             <label for="subscribe-form__email-input" class="visually-hidden"
               >E-mail</label
@@ -402,13 +402,19 @@
               name="subscription-email"
               id=""
             />
-            <button type="submit" class="subscribe-form__button">
+            <!-- <button type="submit" class="subscribe-form__button">
               <div class="subscribe-form__button-body">
                 <p class="subscribe-form__button-text">Підписатися</p>
                 <svg class="subscribe-form__icon" width="24" height="24">
                   <use href="images/icons.svg#icon-send"></use>
                 </svg>
               </div>
+            </button> -->
+            <button type="submit" class="subscribe-form__button">
+              Підписатися
+              <svg class="subscribe-form__icon" width="24" height="24">
+                <use href="images/icons.svg#icon-send"></use>
+              </svg>
             </button>
           </div>
         </form>

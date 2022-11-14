@@ -1,10 +1,14 @@
 .header {
   border-bottom: 1px solid $border-header;
+  &__body {
+    display: flex;
+    align-items: center;
+  }
 }
-.header__body {
-  display: flex;
-  align-items: center;
-}
+// .header__body {
+//   display: flex;
+//   align-items: center;
+// }
 .nav {
   display: flex;
   align-items: center;
@@ -18,10 +22,14 @@
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
   color: $black;
+
+  &__span {
+    color: $blue;
+  }
 }
-.logo__span {
-  color: $blue;
-}
+// .logo__span {
+//   color: $blue;
+// }
 .menu {
   list-style: none;
   display: flex;
