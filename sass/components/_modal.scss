@@ -140,16 +140,8 @@
     display: block;
     margin: auto;
     margin-top: 30px;
-    padding: 10px 52px;
-    background-color: $blue;
-    color: $white;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: calc(30 / 16);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    @include button(10px, 52px, 200px);
+
     transition: background-color $time $cubic;
     &:hover,
     &:focus {
@@ -169,6 +161,9 @@
     }
     &:checked + .modal__checkbox-label .custom-checkbox__icon {
       opacity: 1;
+    }
+    &:focus + .modal__checkbox-label .custom-checkbox {
+      outline: auto;
     }
   }
 

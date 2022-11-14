@@ -6,10 +6,10 @@
   &__body {
     display: flex;
     align-items: baseline;
+    gap: 93px;
   }
   &__info {
     width: 231px;
-    margin-right: 70px;
   }
   &__list {
     list-style: none;
@@ -85,7 +85,6 @@
 // }
 
 .socials {
-  margin-right: 93px;
   &__title {
     font-size: 14px;
     font-weight: 700;
@@ -193,21 +192,10 @@
   fill: $white;
 }
 .subscribe-form__button {
-  background-color: $blue;
+  @include button(10px, 28px, 200px);
   display: flex;
   gap: 10px;
   align-items: center;
-  cursor: pointer;
-  padding: 10px 28px;
-  width: 200px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: calc(30 / 16);
-  letter-spacing: 0.06em;
-  color: $white;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border: none;
-  border-radius: 4px;
   transition: background-color $time $cubic;
   &:hover,
   &:focus {

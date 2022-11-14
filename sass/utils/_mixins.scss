@@ -1,6 +1,7 @@
 @mixin button(
-  $padding-y,
-  $padding-x,
+  $padding-y: 10px,
+  $padding-x: 32px,
+  $width: auto,
   $shadow: 0px 4px 4px rgba(0, 0, 0, 0.15),
   $fweight: 700,
   $fsize: 16px,
@@ -10,6 +11,7 @@
   $bgcolor: $blue
 ) {
   padding: $padding-y $padding-x $padding-y $padding-x;
+  width: $width;
   box-shadow: $shadow;
   color: $color;
   background-color: $bgcolor;
@@ -20,4 +22,5 @@
   letter-spacing: $let-spacing;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 }
