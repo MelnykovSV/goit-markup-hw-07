@@ -214,7 +214,7 @@ img {
 .overlay {
   margin: auto;
   width: min(100%, 1600px);
-  background-image: linear-gradient(to right, rgba(58, 51, 47, 0.4), rgba(47, 48, 58, 0.4)), url("/../../images/bg.jpg");
+  background-image: linear-gradient(to right, rgba(58, 51, 47, 0.4), rgba(47, 48, 58, 0.4)), url("./../../images/bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
